@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <h2>This is difference between var,let,const </h2>
+    </head>
+    <body>
+        <script>
+        // <!-- variable (var) : it is global variable, it is a function scoped -->
+           
+            var x =2;
+            var y =3;
+            var z = x + y;
+            document.write(z);
+            document.write("<br>")
+        
+        // <!-- let : it is a local variable, it is a blocked scope  -->
+            {
+                
+                let a = 5;
+                let b = 6;
+                c= a + b;
+                document.write(c);
+            }
+            document.write("<br>")
+
+        // <!-- const : const variables can neither be updated nor re-declared  -->
+
+        {
+            const e = ["1,2,3,4"];
+            document.write(e);
+            document.write("<br>")
+            e.push = ["5"];
+            document.write(e);
+        }
+        </script>
+    </body>
+</html>

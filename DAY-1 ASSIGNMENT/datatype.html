@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>DATA TYPES</title>
+        <h3>Intro of Datatypes in JS</h3>
+    </head>
+    <body>
+        <h4>Number type</h4>
+        <p>Numbers can be written with or without decimals.</p>
+        <p id="demo"></p>
+        <script>
+            var x1 = 34.00;
+            var x2 = 34;
+            var x3 = 3.14;
+            document.getElementById("demo").innerHTML = x1 + "<br>" + x2 + "<br>" + x3;
+        </script>
+
+        <p>Extra large or extra small numbers can be written with exponential notation.</p>
+        <p id="sample"></p>
+        <script>
+            var y = 123e5;
+            var z = 123e-5;
+            document.getElementById("sample").innerHTML = y + "<br>" + z;
+        </script>
+
+        <p>Strings are written with quotes. You can use single or double quotes.</p>
+        <p id="strings"></p>
+        <script>
+            var carName1 = "Volvo XC60";
+            var carName2 = 'Volvo XC60';
+            document.getElementById("strings").innerHTML = carName1 + "<br>" + carName2; 
+        </script>
+
+        <p>Booleans can have two values: true or false.</p>
+        <p id="boolean"></p>
+        <script>
+            var a = 5;
+            var b = 5;
+            var c = 6;
+            document.getElementById("boolean").innerHTML = ( a==b ) + "<br>" + ( a==c );
+        </script>
+        
+        <p>Array indexes are zero-based, which means the first item is [0].</p>
+        <p id="array"></p>
+        <script>
+            var cars = ["abc","efg","mno"];
+            document.getElementById("array").innerHTML = cars[0];
+        </script>
+    </body>
+</html>
