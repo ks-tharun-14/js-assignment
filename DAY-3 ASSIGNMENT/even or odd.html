@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN OR ODD</title>
+    <h1>Finding whether number is EVEN or ODD.</h1>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function oddoreven(x)
+        {
+            return(x & 1) ? 'odd' : 'even' ;
+        }
+
+        function checkNumber(argNum)
+        {
+            document.getElementById("result").innerHTML = "The number entered is " + argNum + " and the number is "+ oddoreven(argNum) ;
+            console.log(`The number entered is ${argNum} and the number is ` +oddoreven(argNum)) 
+        }
+
+        var number = window.prompt("Enter the number");
+        checkNumber(number);
+    </script>
+</body>
+</html>
